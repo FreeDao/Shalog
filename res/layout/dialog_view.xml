@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_box_bg"
+        android:orientation="vertical">
+        
+        <LinearLayout android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:visibility="gone" >
+            
+            <ImageView android:id="@+id/icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/uc_browser_logo"
+                android:visibility="gone" />
+    
+            <TextView android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                style="@style/_dilog_title_style"
+                android:text="对话框标题"
+                android:visibility="gone" />
+            
+        </LinearLayout>
+        
+        <ScrollView android:id="@+id/contentpanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="22dp"
+            android:overScrollMode="ifContentScrolls"
+            android:orientation="vertical"
+            android:visibility="gone">
+            
+            <TextView android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ff666666"
+                android:text="有View时移除"/>
+        </ScrollView>
+        
+        <include layout="@layout/include_notitlecontent_area" />
+        
+    </LinearLayout>
+    
+    <ImageView android:id="@+id/rigthbtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="4dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_vertical|right|top"
+        android:src="@drawable/dialog_close_bg_selector"
+        android:visibility="gone"/>
+</FrameLayout>

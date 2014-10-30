@@ -1,0 +1,68 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Shalog" parent="@android:style/Theme.Dialog">
+        <!-- android 2.x windowAnimationStyle 使用alpha动画有bug,这里不设置windowAnimationStyle,在values-v11中定义 -->
+        <item name="android:windowBackground">@android:color/transparent</item>      
+        <item name="android:windowFrame">@null</item> 
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="Toalog" parent="Shalog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <style name="SheelogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+    
+    <style name="Sheelog" parent="Shalog">
+        <item name="android:windowAnimationStyle">@style/SheelogAnimation</item>
+    </style>
+    
+    <style name="ShalogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    
+    <style name="_buttonBar">
+        <item name="android:divider">@drawable/list_divider_holo_light</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:background">@null</item>
+        <item name="android:dividerPadding">0dp</item>
+    </style>
+    
+    <style name="_borderlessbutton">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@drawable/common_selector</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    
+    <style name="_dilog_title_style">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+</resources>

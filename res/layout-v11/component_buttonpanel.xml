@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/list_divider_holo_light"
+    android:showDividers="beginning|end"
+    android:dividerHeight="1dp"
+    android:orientation="vertical">
+    <!-- 占位,纯粹是为了把控件撑大 -->
+    <View android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/_buttonBar"
+        android:measureWithLargestChild="true">
+        
+        <Button android:text="negative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/_borderlessbutton"
+            android:id="@+id/negative"
+            android:visibility="gone" />
+        
+        <Button android:text="neutral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/_borderlessbutton"
+            android:id="@+id/neutral"
+            android:visibility="gone" />
+        
+        <Button android:text="positive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/_borderlessbutton"
+            android:textColor="@color/_dialog_positive_button_color"
+            android:id="@+id/positive"
+            android:visibility="gone" />
+        
+    </LinearLayout>
+</LinearLayout>

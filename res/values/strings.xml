@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shalog</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="strarr">
+        <item>Shalog</item>
+        <item>Settings</item>
+        <item>Setting</item>
+    </string-array>
+</resources>

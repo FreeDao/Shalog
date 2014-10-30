@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <integer name="enterfadeduration">150</integer>
+    <integer name="exitfadeduration">200</integer>
+    <dimen name="dialog_width">280dp</dimen>
+</resources>
